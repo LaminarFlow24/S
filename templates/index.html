@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Skin Cancer Detection</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">SkinCheck</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+
+        <li><a href="/templates/sign-up.html">Sign-in</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h4>Welcome</h4>
+          <h1>SkinCheck<br /><span>AI Diagnosis</span></h1>
+          <h2>Smart Diagnosis, Safer Tomorrow</h2>
+          <p>
+            AI-powered Skin Cancer Detection System allows users to upload images for analysis. 
+            The system leverages advanced AI models to classify images as benign or malignant, 
+            supporting early detection and diagnosis.
+          </p>
+          <div class="header__btn">
+            <button>
+              Get Started
+              <span><i class="ri-arrow-right-line"></i></span>
+            </button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/skincheck-header.png" alt="header" />
+        </div>
+      </div>
+      <div class="header__bottom"></div>
+    </header>
+
+    <section class="section__container intro__container">
+      <p class="section__subheader">Introduction</p>
+      <h2 class="section__header">How It Works</h2>
+      <div class="intro__grid">
+        <div class="intro__card">
+          <div class="intro__image">
+            <img src="/static/images/3.png" alt="upload" />
+          </div>
+          <h4>Upload Image</h4>
+          <p>
+            Upload an image of the affected skin area for AI analysis.
+          </p>
+        </div>
+        <div class="intro__card">
+          <div class="intro__image">
+            <img src="/static/images/1.png" alt="analysis" />
+          </div>
+          <h4>AI Diagnosis</h4>
+          <p>
+            Our AI model processes the image to detect potential skin cancer.
+          </p>
+        </div>
+        <div class="intro__card">
+          <div class="intro__image">
+            <img src="/static/images/2.png" alt="doctor" />
+          </div>
+          <h4>Consult a Doctor</h4>
+          <p>
+            Find nearby specialists and book an appointment instantly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="custom-forms">
+        <form action="/search" method="get">
+            <label for="address">Enter Address:</label>
+            <input type="text" name="address" id="address" required>
+            <button class="service_btn" type="submit">Search</button>
+          </form>
+      
+        <form action="/medical" method="get">
+          <button class="service_btn" type="submit">
+            Medical Report Extraction
+          </button>
+        </form>
+      
+        <form action="/skin" method="get">
+          <button class="service_btn" type="submit">
+            Skin Cancer Detection
+          </button>
+        </form>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="section__container about__container" id="about">
+      <p class="section__subheader">About Us</p>
+      <h2 class="section__header">Our Mission</h2>
+      <p>
+        SkinCheck is dedicated to early detection of skin cancer using AI technology. 
+        Our goal is to provide accessible, fast, and accurate diagnosis assistance to everyone.
+      </p>
+    </section>
+
+    <section class="section__container service__container" id="services">
+      <p class="section__subheader">Services</p>
+      <h2 class="section__header">What We Offer</h2>
+      <div class="service__flex">
+        <div class="service__card">
+          <img src="/static/images/5.png" alt="upload" />
+          <p>Image Upload</p>
+        </div>
+        <div class="service__card">
+          <img src="/static/images/4.png" alt="analysis" />
+          <p>AI-Based Diagnosis</p>
+        </div>
+        <div class="service__card">
+          <img src="/static/images/6.png" alt="doctor" />
+          <p>Find Nearby Doctors</p>
+        </div>
+        <div class="service__card">
+          <img src="/static/images/7.png" alt="appointment" />
+          <p>One-Click Appointments</p>
+        </div>
+        <div class="service__card">
+          <img src="/static/images/8.png" alt="education" />
+          <p>Educational Resources</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container chatbot__container">
+      <p class="section__subheader">Support</p>
+      <h2 class="section__header">AI Chatbot Assistance</h2>
+      <p>Get instant answers about skin cancer, symptoms, and prevention.</p>
+    </section>
+
+    <section class="section__container weather__container">
+      <p class="section__subheader">Sun Exposure</p>
+      <h2 class="section__header">Weather & UV Index</h2>
+      <p>Stay updated with local weather and UV index for better skin protection.</p>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#">SkinCheck</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="#">support@skincheck.com</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Follow Us</h4>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

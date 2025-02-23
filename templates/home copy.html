@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Skin Cancer Detection</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">SkinCheck</a>
+        </div>
+        <div class="nav_menu_btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+      <div class="section_container header_container">
+        <div class="header__content">
+          <h4>Welcome</h4>
+          <h1>SkinCheck<br /><span>AI Diagnosis</span></h1>
+          <h2>Smart Diagnosis, Safer Tomorrow</h2>
+          <p>
+            AI-powered Skin Cancer Detection System allows users to upload images for analysis. 
+            The system leverages advanced AI models to classify images as benign or malignant, 
+            supporting early detection and diagnosis.
+          </p>
+        </div>
+        <div class="header__image">
+          <img src="assets/skincheck-header.png" alt="header" />
+        </div>
+      </div>
+      <div class="header__bottom"></div>
+    </header>
+
+    <section class="section_container button_container">
+      <h2 class="section__header">Choose a Service</h2>
+      <div class="button__group">
+        <!-- Searching Cancer Doctors with input for address -->
+        <form action="/search" method="get">
+          <input type="text" name="address" placeholder="Enter your address" required />
+          <button class="service_btn" type="submit">
+            Searching Cancer Doctors
+          </button>
+        </form>
+
+        <!-- Medical Report Extraction -->
+        <!-- Option A: Directly use a form with file input -->
+        <!--
+        <form action="/medical/upload" method="post" enctype="multipart/form-data">
+          <input type="file" name="report" required />
+          <button class="service_btn" type="submit">
+            Medical Report Extraction
+          </button>
+        </form>
+        -->
+        <!-- Option B: Link to a dedicated page for medical report extraction -->
+        <form action="/medical" method="get">
+          <button class="service_btn" type="submit">
+            Medical Report Extraction
+          </button>
+        </form>
+
+        <!-- Skin Cancer Detection -->
+        <!-- Option A: Directly use a form with file input and additional fields -->
+        <!--
+        <form action="/skin/results" method="post" enctype="multipart/form-data">
+          <input type="text" name="age" placeholder="Age" required />
+          <input type="text" name="sex" placeholder="Sex" required />
+          <input type="text" name="region" placeholder="Lesion Region" required />
+          <input type="file" name="pic" required />
+          <button class="service_btn" type="submit">
+            Skin Cancer Detection
+          </button>
+        </form>
+        -->
+        <!-- Option B: Link to a dedicated page for skin detection (skin_home.html) -->
+        <form action="/skin" method="get">
+          <button class="service_btn" type="submit">
+            Skin Cancer Detection
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

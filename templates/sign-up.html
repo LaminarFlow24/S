@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/sign.css" />
+    <title>Skin Cancer Detection</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__content">
+        <h2>SkinCheck</h2>
+        <h3></h3>
+        <h1>SIGN UP</h1>
+        <form action="/">
+          <label for="email">Email</label>
+          <div class="input__row">
+            <input type="email" placeholder="Enter Your Email" />
+          </div>
+          <label for="Phone">Phone</label>
+          <div class="input__row">
+            <input type="text" placeholder="Enter Your Phone" />
+          </div>
+          <label for="email">Age</label>
+          <div class="input__row">
+            <input type="text" placeholder="Enter Your Age" />
+          </div>
+          <label for="city">City</label>
+          <div class="input__row">
+            <input type="city" placeholder="Enter Your City" />
+          </div>
+          <label for="gender">Gender</label>
+          <div class="input__row select-wrapper">
+              <select id="gender" name="gender">
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+              </select>
+          </div>
+          
+
+          <div class="input__header">
+            <label for="password">Password</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <div class="input__row">
+            <input type="password" id="password" placeholder="Password" />
+            <span id="password-eye"><i class="ri-eye-off-line"></i></span>
+          </div>
+          <button>SIGN UP</button>
+        </form>
+        <h6>or continue with</h6>
+        <div class="logins">
+          <a href="#"><img src="/static/images/search.png" alt="google" /></a>
+          <a href="#"><img src="/static/images/github.png" alt="github" /></a>
+          <a href="#"><img src="/static/images/facebook.png" alt="facebook" /></a>
+        </div>
+
+        <p>Already have an account ? <a href="#">Sign IN</a></p>
+      </div>
+      <div class="container__image">
+        <img src="/static/images/header.png" alt="header" />
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
